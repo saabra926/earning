@@ -6,6 +6,9 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <title>Weather App</title>
+      <link rel="icon" href="/favicon.jpg" />
+
       <head>
 
         <meta name="google-site-verification" content="A4TzlCqngFXjRpTz2ra2t3tHYCueGrH5gL3B6l5guC0" />
