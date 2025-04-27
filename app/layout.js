@@ -1,5 +1,5 @@
 import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
+import { Footer } from "@/components/footer/footer";
 import Script from "next/script";
 import "./globals.css";
 

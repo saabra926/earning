@@ -1,37 +1,78 @@
 "use client";
 import Head from "next/head";
 
-export default function Footer() {
+export function Footer() {
   return (
     <>
-      {/* SEO improvements for the Footer page if it's separately routed */}
       <Head>
+        <title>Footer | WeatherNow - Accurate Weather Forecasts</title>
         <meta
           name="description"
-          content="WeatherNow provides accurate, real-time weather forecasts. Stay informed with up-to-date weather news."
+          content="Stay connected with WeatherNow for accurate forecasts, weather news, and updates. Contact us for support or partnership inquiries."
         />
         <meta
           name="keywords"
-          content="WeatherNow, weather updates, weather forecast, live weather, accurate weather"
+          content="WeatherNow, weather updates, weather forecast, contact WeatherNow, weather app"
         />
+        <meta property="og:title" content="WeatherNow | Stay Updated with Accurate Weather Information" />
+        <meta property="og:description" content="Join WeatherNow and get real-time updates, global forecasts, and personalized weather alerts wherever you are." />
+        <meta property="og:image" content="/weathernow-og-image.png" />
+        <meta property="og:url" content="https://exploreweather.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta name="author" content="Dawood Rehman" />
       </Head>
 
-      <footer className="bg-light text-center text-muted py-4 mt-auto border-top" role="contentinfo">
-        <div className="container">
-          <p className="mb-1">
-            © 2025 <strong>WeatherNow</strong>. All rights reserved.
-          </p>
-          <p className="small">
-            Designed and developed by <strong>Dawood Rehman</strong>.
-          </p>
-          <nav aria-label="Footer Navigation">
-            <a href="/privacy" className="text-muted me-3 small">
-              Privacy Policy
-            </a>
-            <a href="/terms" className="text-muted small">
-              Terms of Service
-            </a>
-          </nav>
+      <footer className="bg-dark text-center text-white pt-5 pb-4" role="contentinfo">
+        <div className="container text-md-start">
+          <div className="row text-center text-md-start">
+
+            {/* About Us */}
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">About Us</h6>
+              <p>WeatherNow provides accurate, real-time weather forecasts, news, and alerts to keep you safe and informed worldwide.</p>
+            </div>
+
+            {/* Quick Links */}
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">Quick Links</h6>
+              <p><a href="https://www.instagram.com/_vibe_with_dawood?igsh=MW5lenhobzZxcHM4Zg==" target="_blank" className="text-white">Instagram</a></p>
+              <p><a href="https://github.com/Dawood0426" target="_blank" className="text-white">Github</a></p>
+              <p><a href="https://wa.me/03144885177" target="_blank" className="text-white">WhatsApp</a></p>
+              <p><a href="https://www.facebook.com/itx.rajpootdawood" className="text-white">Facebook</a></p>
+            </div>
+
+            {/* Services */}
+            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">Services</h6>
+              <p><a href="#!" className="text-white">Pricing</a></p>
+              <p><a href="#!" className="text-white">Settings</a></p>
+              <p><a href="#!" className="text-white">Orders</a></p>
+              <p><a href="#!" className="text-white">Help</a></p>
+            </div>
+
+            {/* Contact */}
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i className="fas fa-home mr-3"></i> Faisalabad, GM Abad, PK</p>
+              <p><i className="fas fa-envelope mr-3"></i> rdawood379@gmail.com</p>
+              <p><i className="fas fa-phone mr-3"></i> +92 314 4885177</p>
+              <p><i className="fas fa-print mr-3"></i> +92 314 4885177</p>
+            </div>
+
+          </div>
+
+          {/* Footer Bottom */}
+          <div className="row d-flex justify-content-center mt-4">
+            <div className="col-md-7 col-lg-8">
+              <p className="text-center small">
+                © 2025 <strong>WeatherNow</strong>. All rights reserved. Designed and developed by <a href="https://wa.me/03144885177" target="_blank" className="text-white fw-bold">Dawood Rehman</a>.
+              </p>
+              <div className="d-flex justify-content-center">
+                <a href="/privacy" className="text-white me-3 small">Privacy Policy</a>
+                <a href="/terms" className="text-white small">Terms of Service</a>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </>

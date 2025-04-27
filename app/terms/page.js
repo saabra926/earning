@@ -48,7 +48,7 @@ export default function TermsOfService() {
 
           <h2 className="h5 mt-4">5. Contact Us</h2>
           <p className="text-muted">
-            For any questions about these Terms, please contact us at: <a href="mailto:support@weathernow.com">support@weathernow.com</a>
+            For any questions about these Terms, please contact us at: <a href="mailto:support@weathernow.com">rdawood379@gmail.com</a>
           </p>
         </div>
       </main>

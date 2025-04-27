@@ -47,13 +47,12 @@ export default function Header() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://exploreweather.vercel.app/" />
         <meta property="og:image" content="/weather-og-image.png" />
-        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <header role="banner">
         <nav
-          className="navbar navbar-expand-lg navbar-dark bg-primary px-4"
+          className="navbar navbar-expand-lg navbar-dark bg-dark px-4"
           role="navigation"
           aria-label="Main navigation"
         >
