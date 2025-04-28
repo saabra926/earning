@@ -47,7 +47,7 @@ export function Footer() {
               <h6 className="text-uppercase mb-4 font-weight-bold">Services</h6>
               <p><Link href="/about" className="text-white">About</Link></p>
               <p><a href="/blogs" className="text-white">Blogs</a></p>
-              <p><a href="/faq" className="text-white">FaQs</a></p>
+              <p><a href="/faq" className="text-white">FAQs</a></p>
               <p><a href="/contact" className="text-white">Contact</a></p>
             </div>
 
