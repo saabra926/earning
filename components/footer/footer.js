@@ -1,5 +1,6 @@
 "use client";
 import Head from "next/head";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -44,10 +45,10 @@ export function Footer() {
             {/* Services */}
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">Services</h6>
-              <p><a href="#!" className="text-white">Pricing</a></p>
-              <p><a href="#!" className="text-white">Settings</a></p>
-              <p><a href="#!" className="text-white">Orders</a></p>
-              <p><a href="#!" className="text-white">Help</a></p>
+              <p><Link href="/about" className="text-white">About</Link></p>
+              <p><a href="/blogs" className="text-white">Blogs</a></p>
+              <p><a href="/faq" className="text-white">FaQs</a></p>
+              <p><a href="/contact" className="text-white">Contact</a></p>
             </div>
 
             {/* Contact */}

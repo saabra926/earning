@@ -83,6 +83,7 @@ export default function Header() {
                   { href: "/blogs", label: "Blogs" },
                   { href: "/faq", label: "FAQs" },
                   { href: "/privacy", label: "Privacy Policy" },
+                  { href: "/terms", label: "Services" },
                 ].map((item, idx) => (
                   <li className="nav-item" role="none" key={idx}>
                     <Link href={item.href} passHref legacyBehavior>
