@@ -79,11 +79,13 @@ export default function Header() {
               <ul className="navbar-nav ms-auto" role="menubar">
                 {[
                   { href: "/", label: "Weather", ariaCurrent: "page" },
-                  { href: "/about", label: "About" },
+                  { href: "/about", label: "About Us" },
                   { href: "/blogs", label: "Blogs" },
-                  { href: "/faq", label: "FAQs" },
+                  { href: "/topstories", label: "Top Stories" },
                   { href: "/privacy", label: "Privacy Policy" },
                   { href: "/terms", label: "Services" },
+                  { href: "/contact", label: "Contact" },
+                  { href: "/faq", label: "FAQs" },
                 ].map((item, idx) => (
                   <li className="nav-item" role="none" key={idx}>
                     <Link href={item.href} passHref legacyBehavior>
