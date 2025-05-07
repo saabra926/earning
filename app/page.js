@@ -96,29 +96,66 @@ export default function Home() {
           </section>
         )}
 
-        {/* Extra Informational Content for SEO and Value */}
+        {/* Weather Tips & Educational Content */}
         <section className="mb-5">
-          <h2 className="text-secondary mb-3">Why Use WeatherNow?</h2>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">✅ Fast and simple city-based weather lookup</li>
-            <li className="list-group-item">✅ Powered by global weather APIs</li>
-            <li className="list-group-item">✅ Mobile-friendly and easy to navigate</li>
-            <li className="list-group-item">✅ No sign-up required</li>
-          </ul>
+          <h2 className="text-secondary mb-3">Weather Insights & Tips</h2>
+          <div className="row">
+            <div className="col-md-6 mb-4">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h5 className="card-title">☔ How to Interpret Humidity Levels</h5>
+                  <p className="card-text">
+                    Humidity above <strong>60%</strong> can feel muggy, while below <strong>30%</strong> may cause dry skin. 
+                    Ideal comfort ranges between <strong>30-50%</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 mb-4">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h5 className="card-title">🌡️ Understanding "Feels Like" Temperature</h5>
+                  <p className="card-text">
+                    This accounts for wind chill or heat index. A 20°C day with strong winds might feel like 15°C!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-6 mb-4">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h5 className="card-title">🌬️ Wind Speed Safety Guide</h5>
+                  <p className="card-text">
+                    <strong>0-20 kph</strong>: Calm<br />
+                    <strong>20-40 kph</strong>: Umbrella use risky<br />
+                    <strong>40+ kph</strong>: Potential travel disruptions
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 mb-4">
+              <div className="card h-100">
+                <div className="card-body">
+                  <h5 className="card-title">⏱️ Best Time to Check Forecasts</h5>
+                  <p className="card-text">
+                    For accuracy, check in the <strong>early morning</strong> or <strong>late evening</strong> when weather models are freshly updated.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="mb-5">
-          <h2 className="text-secondary mb-3">Frequently Asked Questions</h2>
-          <div>
-            <h5>How accurate is the weather data?</h5>
-            <p>
-              We use trusted third-party APIs to deliver highly accurate, real-time data updated every 30 minutes.
-            </p>
-            <h5>Can I use WeatherNow on mobile?</h5>
-            <p>Yes, our platform is fully responsive and works seamlessly on all screen sizes.</p>
-            <h5>Is WeatherNow free to use?</h5>
-            <p>Yes! You can use it without registration, and it's completely free.</p>
+        {/* Call-to-Action */}
+        <section className="text-center mb-5">
+          <div className="card bg-light">
+            <div className="card-body">
+              <h3 className="text-primary">Need Detailed Forecasts?</h3>
+              <p>Explore our <Link href="/topstories" className="text-decoration-none">Top Stories</Link> for seasonal trends, disaster preparedness, and more!</p>
+              <Link href="/blogs" className="btn btn-primary mt-2">Read Weather  Blogs</Link>
+            </div>
           </div>
         </section>
 
