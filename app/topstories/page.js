@@ -6,107 +6,107 @@ export default function TopStories() {
     {
       title: "🔥 Heatwave Crisis in India Reaches Alarming Levels",
       date: "April 29, 2025",
-      content: `India is facing an unprecedented heatwave, with temperatures in Delhi, Rajasthan, and parts of Uttar Pradesh crossing 47°C. Hospitals are overwhelmed by heatstroke cases, and the government has issued red alerts in several regions. Farmers report failing crops, water scarcity is increasing, and school closures have been implemented. Climate experts warn that these high temperatures are becoming more frequent and intense due to global warming...
+      content: `India is experiencing a never-before heatwave, with the temperature in Delhi, Rajasthan, and Uttar Pradesh topping 47°C. Heatstroke patients are flooding hospitals, and the government has sounded red alerts in some areas. Crops are reported to be failing by farmers, water shortage is rising, and schools have been shut. Climate scientists say that such high temperatures are becoming more intense and regular due to global warming.
 
-Moreover, the Indian Meteorological Department predicts the heat will persist for another week. Public advisories have been issued in multiple languages. Urban centers like Delhi have set up cooling stations and free drinking water distribution. The heat has intensified debates on climate adaptation policy and the urgency for greening programs. Power grids are under strain, leading to frequent outages. Public health advocates are calling for immediate action to protect vulnerable populations.`
+Additionally, the Indian Meteorological Department foresees the heat lasting for another week. Public warnings have been made available in several languages. Urban areas such as Delhi have established cooling centers and free drinking water dispensation. The heat has raised arguments on climate adaptation policy and the need for greening initiatives. Power supplies are strained, causing frequent power outages. Public health campaigners are demanding swift action to safeguard vulnerable groups.`
     },
     {
       title: "🌪️ Tornadoes Rip Across Midwest USA",
       date: "April 28, 2025",
-      content: `Multiple EF3 and EF4 tornadoes tore across Oklahoma, Kansas, and Missouri, destroying homes and infrastructure. The National Weather Service issued multiple warnings, and residents scrambled for shelter. Damage estimates exceed $500 million. Warm, moist Gulf air clashing with dry Rocky Mountain air created ideal conditions for tornadoes...
+      content: `Several EF3 and EF4 tornadoes ravaged Oklahoma, Kansas, and Missouri, leveling houses and infrastructure. The National Weather Service made repeated warnings, and people scrambled for cover. Damage is estimated at more than $500 million. Warm, wet Gulf air colliding with dry Rocky Mountain air provided perfect conditions for tornadoes.
 
-Communities like Moore and Tulsa have been hit hard. Scientists link these events to shifting jet stream patterns. Volunteers are helping with cleanup, and local governments are distributing disaster relief. Underground shelters and better warning systems are being discussed for the future.`
+Moore and Tulsa are among the areas that have been hard hit. Scientists attribute this to changing patterns of the jet stream. Cleanups are assisted by volunteers, and local authorities are handing out disaster relief. Underground shelters and improved warning systems are being called for in the future.`
     },
     {
       title: "🌊 Flash Floods Devastate Jakarta, Indonesia",
       date: "April 27, 2025",
-      content: `Heavy rains over three days triggered severe flooding in Jakarta, submerging entire neighborhoods. Over 200,000 residents were displaced. Emergency shelters were set up. Jakarta’s aging drainage system struggled to cope. Authorities are fast-tracking plans for new canals and pumps...
+      content: `Heavy three-day rains caused catastrophic flooding in Jakarta, inundating entire city districts. More than 200,000 residents were left homeless. Emergency centers were established. Jakarta's old drainage system could not handle the volume. Authorities are accelerating new canals and pumps plans.
 
-Environmentalists stress the need for green infrastructure and reforestation to mitigate future disasters. Public health teams are monitoring for waterborne disease outbreaks. Citizens are demanding long-term climate adaptation over temporary fixes.`
+Environmentalists emphasize green infrastructure and afforestation to reduce disaster damage in the future. Public health workers are on the lookout for outbreaks of waterborne diseases. Citizens are pushing for long-term climate adaptation rather than short-term solutions.`
     },
     {
       title: "❄️ Canada Braces for Harsh Arctic Winter",
       date: "April 26, 2025",
-      content: `Arctic winds are sweeping across Canada, bringing sub-zero temperatures to Nunavut, Manitoba, and Alberta. Inuit communities have prepared emergency supplies, while schools and roads brace for closures. The Canadian Weather Office has issued blizzard warnings across the prairies...
+      content: `Arctic gusts are blowing through Canada, delivering below-freezing conditions to Nunavut, Manitoba, and Alberta. Inuit members have stocked up emergency rations, as schools and highways prepare for shutdown. Blizzards have been forecast by the Canadian Weather Office throughout the prairies.
 
-Authorities are urging residents to avoid unnecessary travel. Cold shelters in major cities have extended their hours. Scientists believe the polar vortex is shifting due to warming Arctic seas. Snowfall this year may break previous records.`
+The authorities are advising people to stay away from unnecessary travel. Cold shelters in large cities have extended their operating hours. Researchers think that the polar vortex is moving because of warming Arctic oceans. This year's snowfall could be a record breaker.`
     },
     {
       title: "🔥 Wildfires Rage Across Australia’s New South Wales",
       date: "April 25, 2025",
-      content: `Hot winds and dry conditions have sparked over 50 wildfires near Sydney. Firefighters from across the country have been deployed. Several communities have been evacuated, and air quality in Sydney has dropped significantly...
+      content: `Hot winds and dryness have ignited more than 50 bushfires in the vicinity of Sydney. Firefighters from all over the country have been sent. Some communities have been evacuated, and air quality in Sydney has fallen dramatically.
 
-Climate scientists say fire seasons are becoming longer and more severe due to climate change. Residents are urged to have evacuation plans ready. Drones and satellites are being used to monitor fire spread in real time.`
+Climate scientists report that fire seasons are getting longer and more intense as a result of climate change. People are advised to prepare evacuation plans. Drones and satellites are being employed to track fire spread in real time.`
     },
     {
       title: "☔ Typhoon Fujin Hits Japan with Record Rainfall",
       date: "April 24, 2025",
-      content: `Typhoon Fujin made landfall with winds exceeding 150 km/h. Tokyo and Chiba saw over 400 mm of rain in 24 hours. Train services, airports, and schools were shut down. Over a million residents were evacuated as rivers breached levees...
+      content: `Typhoon Fujin struck with more than 150 km/h winds. Tokyo and Chiba recorded more than 400 mm rain in a 24-hour period. Trains, airports, and schools were closed. More than a million residents were forced to evacuate when rivers overflowed levees.
 
-Japan’s advanced warning systems saved lives, but the flooding caused by overflowing rivers has caused infrastructure damage. Engineers say upgrades are needed to withstand stronger future storms.`
+Japan's warning systems helped people survive, but the river overflow flooding has destroyed infrastructure. Upgrades are necessary to be able to handle future storms with higher winds, according to engineers.`
     },
     {
       title: "🌬️ Sandstorm Disrupts Travel in Saudi Arabia",
       date: "April 23, 2025",
-      content: `A massive sandstorm swept across Riyadh and surrounding cities, reducing visibility to near zero. Airports suspended flights, and highways were temporarily closed. Health advisories have been issued for people with respiratory conditions...
+      content: `A huge sandstorm raged over Riyadh and neighboring cities, lowering visibility to close to zero. Airports halted flights, and roads were temporarily closed. Health alerts have been issued for individuals with respiratory ailments.
 
-Urban planners are evaluating how better vegetation and urban design could reduce sandstorm impact in the future. Schools remained closed as a precaution, and mask distribution increased.`
+Urban planners are considering how improved vegetation and urban planning could minimize sandstorm effects in the future. Schools continued to be closed as a precaution, and mask distribution rose.`
     },
     {
       title: "💨 Cyclone Basil Threatens Madagascar and Mozambique",
       date: "April 22, 2025",
-      content: `Cyclone Basil, a Category 3 storm, is moving across the Indian Ocean toward southeastern Africa. Coastal communities are preparing for flooding and high winds. International aid is on standby...
+      content: `Cyclone Basil, a Category 3, is bearing down on southeastern Africa across the Indian Ocean. Coastal residents are bracing for flooding and strong winds. International relief is on standby.
 
-Meteorologists are tracking the storm's path closely. Mozambique’s National Disaster Institute has pre-deployed food and water supplies. Madagascar has suspended ferry operations and warned fishermen to stay onshore.`
+Weather experts are monitoring the storm's trajectory intently. Mozambique's National Disaster Institute has deployed food and water resources ahead of time. Ferry services have been halted in Madagascar, and fishermen have been advised to remain ashore.`
     },
     {
       title: "🌫️ Smog Alert Issued in Beijing Amid Weather Inversion",
       date: "April 21, 2025",
-      content: `Beijing’s air quality index hit hazardous levels due to a strong temperature inversion. Industrial activity, traffic, and stagnant winds worsened the pollution. Schools suspended outdoor activities, and masks are recommended...
+      content: `The air quality index in Beijing reached dangerous levels as a result of a severe temperature inversion. Industrial activity, traffic, and static winds exacerbated the pollution. Outdoor activities were suspended in schools, and masks are advised.
 
-Officials are enforcing temporary factory shutdowns. Health experts say such inversions are becoming more frequent due to regional climate changes. The city is investing in greener transit and stricter emissions laws.`
+Government officials are mandating short-term factory closures. Such inversions are growing more common, according to health experts, because of regional climate shifts. The city is committing to cleaner transit and tighter emissions regulations.`
     },
     {
       title: "🌧️ Historic Floods Submerge Venice, Italy",
       date: "April 20, 2025",
-      content: `Venice is experiencing its worst flooding in 50 years. St. Mark’s Basilica and surrounding areas are underwater after storm surges combined with heavy rain. Tourism has come to a halt...
+      content: `Venice is seeing its worst flooding in 50 years. St. Mark's Basilica and its surroundings are flooded after storm surges merged with heavy rain. Tourism has ground to a halt.
 
-City engineers are reviewing the MOSE barrier project, designed to protect Venice from such events. Climate activists say sea-level rise is outpacing local solutions. Locals are using wooden walkways and boats to navigate flooded streets.`
+City engineers are reconsidering the MOSE barrier project, which is meant to shield Venice from such occurrences. Climate activists claim sea-level rise is ahead of local solutions. Locals are walking on wooden walkways and boats through flooded streets.`
     },
     {
       title: "🌪️ Severe Storms Pound South Africa’s Eastern Cape",
       date: "April 19, 2025",
-      content: `Thunderstorms and flash floods hit the Eastern Cape, leaving thousands without power. Roads and bridges were washed out, and emergency shelters filled up quickly...
+      content: `Thunderstorms and flash floods struck the Eastern Cape, disrupting electricity to thousands of people. Roadways and bridges were destroyed, and emergency shelters quickly became occupied.
 
-The South African Weather Service had issued advance warnings. NGOs are distributing food, water, and blankets. The provincial government is requesting disaster relief funds from the national treasury.`
+Advanced warnings had been issued by the South African Weather Service. NGOs are distributing food, water, and blankets. The provincial government is seeking disaster relief funds from the national treasury.`
     },
     {
       title: "🔥 Drought Emergency Declared in Chile",
       date: "April 18, 2025",
-      content: `Chile’s central region is suffering its worst drought in 60 years. Water reservoirs are below 20% capacity, and farmers are abandoning crops. Santiago has imposed water usage restrictions...
+      content: `Chile's central region is experiencing its worst drought in 60 years. Water reservoirs are at less than 20% capacity, and crops are being left behind by farmers. Santiago has placed water use restrictions.
 
-The government declared a state of emergency to access funding. Climate experts link the crisis to persistent La Niña conditions. Desalination plants and cloud seeding are being explored.`
+The government issued a state of emergency to tap into funding. Climate specialists attribute the crisis to ongoing La Niña conditions. Desalination plants and cloud seeding are being considered.`
     },
     {
       title: "🌨️ Record Snowfall Blankets Moscow",
       date: "April 17, 2025",
-      content: `Moscow received its heaviest late-spring snowfall in decades, disrupting flights and traffic. A Siberian cold front swept across the city, breaking historical records...
+      content: `Moscow was hit with its most intense late-spring snow in decades, grounding flights and halting traffic. A Siberian cold front rolled through the city, shattering records.
 
-City services struggled to keep roads clear. Schools moved to remote learning. Meteorologists cite an anomaly in Arctic jet streams as the cause.`
+City services were strained to clear streets. Schools shifted to online learning. Meteorologists attribute the cause to an anomaly in Arctic jet streams.`
     },
     {
       title: "☀️ Heat Records Shattered Across Brazil",
       date: "April 16, 2025",
-      content: `Brazil is seeing record-breaking April temperatures. São Paulo and Rio de Janeiro reached over 42°C. Public cooling centers have opened, and hydration points are available in parks and metros...
+      content: `Brazil is experiencing April temperatures that break all records. São Paulo and Rio de Janeiro topped 42°C. Cool public centers opened, and people have hydration spots in parks and metros.
 
-Health officials advise limited outdoor exposure. Climate researchers say the Amazon's deforestation is weakening regional rain cycles, making heatwaves more intense.`
+Limited outdoor exposures are recommended by health officials. Climate scientists believe that deforestation of the Amazon is weakening rainfall cycles in the region, producing more intense heatwaves.`
     },
     {
       title: "☁️ UK Sees Wettest Spring in a Century",
       date: "April 15, 2025",
-      content: `The UK has recorded its wettest spring in over 100 years. Rivers in Yorkshire and the Midlands are at critical flood levels. Rail and road travel has been disrupted...
+      content: `The UK has just set its wettest spring for more than 100 years. The rivers of Yorkshire and the Midlands are at or near flood points. Rail and road journeys have been affected.
 
-Flood barriers in London and the Thames Valley have been raised multiple times this month. Residents are calling for more investment in rural drainage and urban green roofs.`
+London and the Thames Valley have had flood barriers raised several times this month. Residents demand further investment in drainage in rural areas and urban roofs..`
     }
   ];
 
