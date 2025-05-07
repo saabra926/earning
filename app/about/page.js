@@ -1,5 +1,6 @@
 "use client";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -107,7 +108,7 @@ export default function About() {
           <section className="mb-5">
             <h2 className="h3 fw-bold text-secondary mb-3">Our Commitment to Transparency</h2>
             <p className="text-muted fs-5">
-              We do not sell user data. Our <a href="/privacy" className="text-primary text-decoration-underline">Privacy Policy</a> outlines how your information is collected and protected. We value your trust and believe that weather services should always prioritize user safety and transparency.
+              We do not sell user data. Our <Link href="/privacy" className="text-primary text-decoration-underline">Privacy Policy</Link> outlines how your information is collected and protected. We value your trust and believe that weather services should always prioritize user safety and transparency.
             </p>
           </section>
 
@@ -125,9 +126,9 @@ export default function About() {
             <p className="fs-5 text-muted mb-4">
               Join thousands of users who rely on WeatherNow for clear, up-to-date weather forecasts. From your morning jog to emergency preparedness, we're here for you.
             </p>
-            <a href="/" className="btn btn-lg btn-primary px-4">
+            <Link href="/" className="btn btn-lg btn-primary px-4">
               Visit Homepage
-            </a>
+            </Link>
           </section>
         </div>
       </main>
