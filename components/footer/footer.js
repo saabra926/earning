@@ -36,19 +36,19 @@ export function Footer() {
             {/* Quick Links */}
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">Quick Links</h6>
-              <p><a href="https://www.instagram.com/_vibe_with_dawood?igsh=MW5lenhobzZxcHM4Zg==" target="_blank" className="text-white">Instagram</a></p>
-              <p><a href="https://github.com/Dawood0426" target="_blank" className="text-white">Github</a></p>
-              <p><a href="https://wa.me/03144885177" target="_blank" className="text-white">WhatsApp</a></p>
-              <p><a href="https://www.facebook.com/itx.rajpootdawood" className="text-white">Facebook</a></p>
+              <p><Link href="https://www.instagram.com/_vibe_with_dawood?igsh=MW5lenhobzZxcHM4Zg==" target="_blank" className="text-white">Instagram</Link></p>
+              <p><Link href="https://github.com/Dawood0426" target="_blank" className="text-white">Github</Link></p>
+              <p><Link href="https://wa.me/03144885177" target="_blank" className="text-white">WhatsApp</Link></p>
+              <p><Link href="https://www.facebook.com/itx.rajpootdawood" className="text-white">Facebook</Link></p>
             </div>
 
             {/* Services */}
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase mb-4 font-weight-bold">Services</h6>
               <p><Link href="/about" className="text-white">About</Link></p>
-              <p><a href="/blogs" className="text-white">Blogs</a></p>
-              <p><a href="/faq" className="text-white">FAQs</a></p>
-              <p><a href="/contact" className="text-white">Contact</a></p>
+              <p><Link href="/blogs" className="text-white">Blogs</Link></p>
+              <p><Link href="/faq" className="text-white">FAQs</Link></p>
+              <p><Link href="/contact" className="text-white">Contact</Link></p>
             </div>
 
             {/* Contact */}
@@ -69,8 +69,8 @@ export function Footer() {
                 © 2025 <strong>WeatherNow</strong>. All rights reserved. Designed and developed by <a href="https://wa.me/03144885177" target="_blank" className="text-white fw-bold">Dawood Rehman</a>.
               </p>
               <div className="d-flex justify-content-center">
-                <a href="/privacy" className="text-white me-3 small">Privacy Policy</a>
-                <a href="/terms" className="text-white small">Terms of Service</a>
+                <Link href="/privacy" className="text-white me-3 small">Privacy Policy</Link>
+                <Link href="/terms" className="text-white small">Terms of Service</Link>
               </div>
             </div>
           </div>
