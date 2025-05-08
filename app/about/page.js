@@ -48,14 +48,14 @@ export default function About() {
         />
       </Head>
 
-      
+
       <main className="bg-light">
         <div className="container py-5">
           {/* Hero Section */}
           <section className="text-center py-5 mb-4 bg-white rounded-3 shadow-sm">
             <h1 className="display-5 fw-bold mb-3">Why WeatherNow Stands Out</h1>
-            <p className="lead mx-auto" style={{maxWidth: "700px"}}>
-              We're not just another weather app - we're a team of <strong>passionate meteorologists</strong> and <strong>data scientists</strong> 
+            <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
+              We're not just another weather app - we're a team of <strong>passionate meteorologists</strong> and <strong>data scientists</strong>
               dedicated to making weather forecasting accessible, accurate, and actionable.
             </p>
           </section>
@@ -75,12 +75,12 @@ export default function About() {
             <div className="col-lg-6  order-lg-1">
               <h2 className="h2 fw-bold mb-4">Our Humble Beginnings</h2>
               <p className="mb-4">
-                Founded in 2022 during a record-breaking hurricane season, WeatherNow started as a university project between 
-                meteorology students and computer engineers. Frustrated by inaccurate local forecasts, we set out to build 
+                Founded in 2022 during a record-breaking hurricane season, WeatherNow started as a university project between
+                meteorology students and computer engineers. Frustrated by inaccurate local forecasts, we set out to build
                 a <strong>hyper-local prediction system</strong> that could help communities prepare for severe weather.
               </p>
               <p>
-                Today, we process over <strong>2.5 million weather data points daily</strong> from our network of 
+                Today, we process over <strong>2.5 million weather data points daily</strong> from our network of
                 professional-grade weather stations, satellite feeds, and government radar systems.
               </p>
             </div>
@@ -159,11 +159,11 @@ export default function About() {
             </div>
           </section>
 
-    
+
           {/* Data Partnerships */}
           <section className="my-5 py-4 bg-white rounded-3 shadow-sm">
             <h2 className="h2 fw-bold text-center mb-4">Trusted Data Sources</h2>
-            <p className="text-center mb-5 mx-auto" style={{maxWidth: "700px"}}>
+            <p className="text-center mb-5 mx-auto" style={{ maxWidth: "700px" }}>
               We combine our proprietary data with these authoritative sources to deliver the most reliable forecasts:
             </p>
             <div className="row g-4 justify-content-center">
@@ -180,14 +180,14 @@ export default function About() {
           {/* CTA Section */}
           <section className="text-center my-5 py-5 bg-primary text-white rounded-3">
             <h2 className="h1 fw-bold mb-4">Ready for Better Weather Insights?</h2>
-            <p className="lead mb-5 mx-auto" style={{maxWidth: "600px"}}>
+            <p className="lead mb-5 mx-auto" style={{ maxWidth: "600px" }}>
               Join over 250,000 users who trust WeatherNow for their daily planning and emergency preparedness.
             </p>
-            <div className="d-flex justify-content-center gap-3">
-              <Link href="/" className="btn btn-light btn-lg px-4">
+            <div className="d-flex flex-column flex-md-row justify-content-center gap-3">
+              <Link href="/" className="btn btn-light btn-lg px-4 w-100 w-md-auto text-center">
                 Try Live Forecast
               </Link>
-              <Link href="/contact" className="btn btn-outline-light btn-lg px-4">
+              <Link href="/contact" className="btn btn-outline-light btn-lg px-4 w-100 w-md-auto text-center">
                 Contact Our Team
               </Link>
             </div>
@@ -195,7 +195,7 @@ export default function About() {
         </div>
       </main>
 
-      
+
     </>
   );
 }
