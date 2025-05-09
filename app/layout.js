@@ -10,11 +10,12 @@ export default function RootLayout({ children }) {
       <head>
 
 
-      <title>Weather App</title>
-      <link rel="icon" href="/favicon.jpg" />
+        <title>Weather App</title>
+        <link rel="icon" href="/favicon.jpg" />
+
 
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9296013700822279"
-     crossorigin="anonymous"></script>
+          crossorigin="anonymous"></script>
 
         <meta name="google-site-verification" content="A4TzlCqngFXjRpTz2ra2t3tHYCueGrH5gL3B6l5guC0" />
 
