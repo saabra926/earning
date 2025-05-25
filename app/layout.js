@@ -18,7 +18,12 @@ export default function RootLayout({ children }) {
           crossorigin="anonymous"></script>
 
 
-        <meta name="google-site-verification" content="A4TzlCqngFXjRpTz2ra2t3tHYCueGrH5gL3B6l5guC0" />
+
+<meta name="google-site-verification" content="OU68Q3H8nSu8nYkDqkvPKPBNH8WmzHiPmqUFyjX12oE" />
+
+
+
+
 
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
