@@ -157,33 +157,10 @@ export default function Home() {
 
 
 
-        {weatherData?.forecast?.forecastday && (
-          <section className="mx-auto mb-5" style={{ maxWidth: "700px" }}>
-            <div className="row row-cols-1 row-cols-md-3 g-3">
-              {weatherData.forecast.forecastday.map((day, index) => (
-                <div className="col" key={index}>
-                  <div className="card h-100 text-center shadow-sm">
-                    <div className="card-body">
-                      <h5 className="card-title">
-                        {new Date(day.date).toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' })}
-                      </h5>
-                      <img
-                        src={day.day.condition.icon.replace("64x64", "128x128")}
-                        alt={day.day.condition.text}
-                        width="80"
-                        height="80"
-                        loading="lazy"
-                      />
-                      <p className="mt-2 mb-1"><strong>{day.day.condition.text}</strong></p>
-                      <p className="mb-0">🌡️ Max: {day.day.maxtemp_c}°C / Min: {day.day.mintemp_c}°C</p>
-                      <p className="mb-0">🌧️ Rain: {day.day.daily_chance_of_rain}%</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
+
+
+
+
         {/* Educational Content (SEO-Optimized) */}
         <section className="mb-5">
           <h2 className="h3 text-center mb-4">Weather Education Center</h2>
