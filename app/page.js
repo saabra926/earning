@@ -24,7 +24,7 @@ export default function Home() {
     setLoading(true);
     try {
       const response = await axios.get(
-        `https://api.weatherapi.com/v1/current.json?key=03ddc42f6b3946d485053718240810&q=${city}&aqi=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=03ddc42f6b3946d485053718240810&q=${city}&days=3&aqi=no`
       );
       setWeatherData(response.data);
       setError("");
@@ -74,10 +74,10 @@ export default function Home() {
         <section className="text-center mb-4 py-3 bg-light rounded">
           <h1 className="display-5 fw-bold text-primary mb-2">🌤️ WeatherNow</h1>
           <p className="lead text-muted mb-3">
-            Real-time weather updates for <strong>{weatherData?.location?.name || "your city"}</strong>. 
+            Real-time weather updates for <strong>{weatherData?.location?.name || "your city"}</strong>.
             Trusted by travelers and locals since 2025.
           </p>
-          
+
           {/* Search Box (Optimized for Mobile) */}
           <div className="d-flex justify-content-center mb-3">
             <div className="input-group" style={{ maxWidth: "500px" }}>
@@ -90,8 +90,8 @@ export default function Home() {
                 aria-label="City name"
                 onKeyPress={(e) => e.key === "Enter" && fetchWeather()}
               />
-              <button 
-                onClick={fetchWeather} 
+              <button
+                onClick={fetchWeather}
                 className="btn btn-primary px-4"
                 disabled={loading}
                 aria-label="Get weather"
@@ -103,50 +103,87 @@ export default function Home() {
           {error && <div className="alert alert-danger mx-auto" style={{ maxWidth: "500px" }}>{error}</div>}
         </section>
 
-        {/* Weather Display (AdSense-Compatible Layout) */}
-        {weatherData && (
-          <section className="card shadow-sm mx-auto mb-5" style={{ maxWidth: "650px" }}>
-            <div className="card-body p-4">
-              <h2 className="h4 card-title text-center mb-3">
-                {weatherData.location.name}, {weatherData.location.country}
-                <span className="ms-2 badge bg-info">{weatherData.current.condition.text}</span>
-              </h2>
-              
-              
+      {/* Current Weather Section */}
+{weatherData && (
+  <section className="card shadow-sm border rounded p-4 mb-5">
+    <div className="row align-items-center">
+      {/* Left Column: Icon & Temp */}
+      <div className="col-md-4 text-center">
+        <img
+          src={weatherData.current.condition.icon.replace("64x64", "128x128")}
+          alt={weatherData.current.condition.text}
+          width="100"
+          height="100"
+          loading="lazy"
+        />
+        <p className="h2 my-2">{weatherData.current.temp_c}°C</p>
+        <p className="text-muted">Feels Like: {weatherData.current.feelslike_c}°C</p>
+        <p className="small text-muted">{weatherData.current.condition.text}</p>
+      </div>
 
-              <div className="row align-items-center">
-                <div className="col-md-4 text-center">
-                  <img 
-                    src={weatherData.current.condition.icon.replace("64x64", "128x128")} 
-                    alt={weatherData.current.condition.text} 
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                  />
-                  <p className="h2 my-2">{weatherData.current.temp_c}°C</p>
-                  <p className="text-muted">Feels Like: {weatherData.current.feelslike_c}°C</p>
-                </div>
-                <div className="col-md-8">
-                  <div className="row">
-                    <div className="col-6 col-md-4 mb-3">
-                      <p className="mb-1"><strong>🌡️ Humidity</strong></p>
-                      <p>{weatherData.current.humidity}%</p>
-                    </div>
-                    <div className="col-6 col-md-4 mb-3">
-                      <p className="mb-1"><strong>💨 Wind</strong></p>
-                      <p>{weatherData.current.wind_kph} kph</p>
-                    </div>
-                    <div className="col-6 col-md-4 mb-3">
-                      <p className="mb-1"><strong>⏱️ Local Time</strong></p>
-                      <p>{weatherData.location.localtime.split(" ")[1]}</p>
+      {/* Right Column: Weather Info */}
+      <div className="col-md-8">
+        <div className="row">
+          <div className="col-6 col-md-4 mb-3">
+            <p className="mb-1"><strong>📍 City</strong></p>
+            <p>{weatherData.location.name}</p>
+          </div>
+          <div className="col-6 col-md-4 mb-3">
+            <p className="mb-1"><strong>🌍 province</strong></p>
+            <p>{weatherData.location.region}</p>
+          </div>
+          <div className="col-6 col-md-4 mb-3">
+            <p className="mb-1"><strong>🌐 Country</strong></p>
+            <p>{weatherData.location.country}</p>
+          </div>
+          <div className="col-6 col-md-4 mb-3">
+            <p className="mb-1"><strong>🌡️ Humidity</strong></p>
+            <p>{weatherData.current.humidity}%</p>
+          </div>
+          <div className="col-6 col-md-4 mb-3">
+            <p className="mb-1"><strong>💨 Wind</strong></p>
+            <p>{weatherData.current.wind_kph} kph</p>
+          </div>
+          <div className="col-6 col-md-4 mb-3">
+            <p className="mb-1"><strong>🕒 Local Time</strong></p>
+            <p>{weatherData.location.localtime}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+
+
+
+        {weatherData?.forecast?.forecastday && (
+          <section className="mx-auto mb-5" style={{ maxWidth: "700px" }}>
+            <div className="row row-cols-1 row-cols-md-3 g-3">
+              {weatherData.forecast.forecastday.map((day, index) => (
+                <div className="col" key={index}>
+                  <div className="card h-100 text-center shadow-sm">
+                    <div className="card-body">
+                      <h5 className="card-title">
+                        {new Date(day.date).toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' })}
+                      </h5>
+                      <img
+                        src={day.day.condition.icon.replace("64x64", "128x128")}
+                        alt={day.day.condition.text}
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                      />
+                      <p className="mt-2 mb-1"><strong>{day.day.condition.text}</strong></p>
+                      <p className="mb-0">🌡️ Max: {day.day.maxtemp_c}°C / Min: {day.day.mintemp_c}°C</p>
+                      <p className="mb-0">🌧️ Rain: {day.day.daily_chance_of_rain}%</p>
                     </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </section>
         )}
-
         {/* Educational Content (SEO-Optimized) */}
         <section className="mb-5">
           <h2 className="h3 text-center mb-4">Weather Education Center</h2>
@@ -181,15 +218,14 @@ export default function Home() {
           </div>
         </section>
 
-
         {/* Internal Linking Hub (SEO Booster) */}
         <section className="bg-primary text-white rounded p-4 mb-5">
           <div className="row align-items-center">
             <div className="col-md-8">
               <h2 className="h4 mb-3">Explore More Weather Resources</h2>
               <p className="mb-0">
-                Dive into <Link href="/blogs" className="text-white fw-bold">expert blogs</Link>, 
-                seasonal <Link href="/" className="text-white fw-bold">extended forecasts</Link>, 
+                Dive into <Link href="/blogs" className="text-white fw-bold">expert blogs</Link>,
+                seasonal <Link href="/" className="text-white fw-bold">extended forecasts</Link>,
                 and <Link href="/faq" className="text-white fw-bold">disaster preparedness guides</Link>.
               </p>
             </div>
