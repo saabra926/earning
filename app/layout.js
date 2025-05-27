@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
 
 
-<meta name="google-site-verification" content="OU68Q3H8nSu8nYkDqkvPKPBNH8WmzHiPmqUFyjX12oE" />
+        <meta name="google-site-verification" content="OU68Q3H8nSu8nYkDqkvPKPBNH8WmzHiPmqUFyjX12oE" />
 
 
 
@@ -29,8 +29,7 @@ export default function RootLayout({ children }) {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
         />
-
-        <Script src="your-script.js" defer></Script>
+        
 
         <Script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
