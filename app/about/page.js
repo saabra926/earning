@@ -9,8 +9,8 @@ export default function About() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "WeatherNow",
-    "url": "https://exploreweather.vercel.app",
-    "logo": "https://exploreweather.vercel.app/logo.png",
+    "url": "https://exploreweather.site",
+    "logo": "https://exploreweather.site/logo.png",
     "description": "Accurate real-time weather forecasting platform",
     "founders": [
       {
@@ -36,11 +36,12 @@ export default function About() {
           name="keywords"
           content="weather forecasting technology, meteorology team, weather data accuracy, storm prediction, climate monitoring, weather API"
         />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content="About WeatherNow | Trusted Weather Forecasting" />
         <meta property="og:description" content="Learn how our team of meteorologists and engineers build reliable weather prediction tools." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://exploreweather.vercel.app/about" />
-        <meta property="og:image" content="https://exploreweather.vercel.app/weather-tech.jpg" />
+        <meta property="og:url" content="https://exploreweather.site/about" />
+        <meta property="og:image" content="https://exploreweather.site/weather-tech.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <script
           type="application/ld+json"

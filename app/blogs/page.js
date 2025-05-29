@@ -1,24 +1,10 @@
 "use client";
-import Head from "next/head";
 import Link from "next/link";
 
 export default function Blogs() {
   return (
     <>
-      {/* SEO Meta Tags */}
-      <Head>
-        <title>Weather Blogs | In-Depth Forecast Insights | ExplorerAds</title>
-        <meta
-          name="description"
-          content="Explore 10+ in-depth weather blogs about forecasting rain, survival tips, climate change, global weather patterns, best apps of 2025, and much more. Curated by ExplorerAds."
-        />
-        <meta
-          name="keywords"
-          content="weather blogs, climate change, predicting rain, best weather apps, extreme weather survival, forecasting tips, global weather patterns, ExplorerAds 2025"
-        />
-        <meta name="author" content="ExplorerAds Team" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+   
 
       {/* Blog Page Content */}
       <main className="min-vh-100 bg-light py-5 px-3" role="main">

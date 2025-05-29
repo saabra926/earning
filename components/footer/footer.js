@@ -1,28 +1,9 @@
 "use client";
-import Head from "next/head";
 import Link from "next/link";
 
 export function Footer() {
   return (
     <>
-      <Head>
-        <title>Footer | WeatherNow - Accurate Weather Forecasts</title>
-        <meta
-          name="description"
-          content="Stay connected with WeatherNow for accurate forecasts, weather news, and updates. Contact us for support or partnership inquiries."
-        />
-        <meta
-          name="keywords"
-          content="WeatherNow, weather updates, weather forecast, contact WeatherNow, weather app"
-        />
-        <meta property="og:title" content="WeatherNow | Stay Updated with Accurate Weather Information" />
-        <meta property="og:description" content="Join WeatherNow and get real-time updates, global forecasts, and personalized weather alerts wherever you are." />
-        <meta property="og:image" content="/weathernow-og-image.png" />
-        <meta property="og:url" content="https://exploreweather.vercel.app" />
-        <meta property="og:type" content="website" />
-        <meta name="author" content="Dawood Rehman" />
-      </Head>
-
       <footer className="bg-dark text-center text-white pt-5 pb-4" role="contentinfo">
         <div className="container text-md-start">
           <div className="row text-center text-md-start">

@@ -1,18 +1,10 @@
 "use client";
-import Head from "next/head";
 import Link from "next/link";
 
 export default function PrivacyPolicy() {
   return (
     <>
-      <Head>
-        <title>Privacy Policy | WeatherNow - Your Trusted Weather Source</title>
-        <meta
-          name="description"
-          content="WeatherNow's comprehensive privacy policy detailing how we collect, use, and protect your personal information in compliance with GDPR and other privacy regulations."
-        />
-        <meta name="robots" content="index, follow" />
-      </Head>
+      
 
       <main className="container py-5">
         <div className="row justify-content-center">

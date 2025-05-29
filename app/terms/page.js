@@ -1,24 +1,9 @@
 "use client";
-import Head from "next/head";
 import Link from "next/link";
 
 export default function TermsOfService() {
   return (
     <>
-      <Head>
-        <title>Terms of Service | WeatherNow - Your Trusted Weather Source</title>
-        <meta
-          name="description"
-          content="Complete Terms of Service for WeatherNow. Learn about user responsibilities, content policies, intellectual property rights, and more."
-        />
-        <meta
-          name="keywords"
-          content="WeatherNow terms, terms of service, user agreement, website policies, legal terms"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="WeatherNow Team" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
 
       <main className="container py-5" role="main">
         <div className="row justify-content-center">

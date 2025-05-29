@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import axios from "axios";
-import Head from "next/head";
 import Link from "next/link";
 
 export default function Home() {
@@ -47,28 +46,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>WeatherNow | Live Forecasts & Climate Data (2024)</title>
-        <meta
-          name="description"
-          content="Accurate real-time weather forecasts for any city. Check temperature, humidity, wind speed, and expert weather tips. Updated every hour."
-        />
-        <meta
-          name="keywords"
-          content="live weather, weather forecast today, humidity levels, wind speed, local climate, weather alerts"
-        />
-        <meta name="author" content="WeatherNow Team" />
-        <meta property="og:title" content="WeatherNow: Instant Weather Updates" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://exploreweather.vercel.app/" />
-        <meta property="og:image" content="/weather-cover.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
-
       <main className="container py-4">
         {/* Hero Section */}
         <section className="text-center mb-4 py-3 bg-light rounded">

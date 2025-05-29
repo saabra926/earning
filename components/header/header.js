@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import Head from "next/head";
 import { useEffect } from "react";
 import "./header.css";
 
@@ -29,27 +28,6 @@ export default function Header() {
 
   return (
     <>
-      <Head>
-        <title>WeatherNow - Real-Time Weather Updates</title>
-        <meta
-          name="description"
-          content="Get accurate, real-time weather updates, forecasts, and alerts. Stay informed with WeatherNow!"
-        />
-        <meta
-          name="keywords"
-          content="weather, weather app, real-time weather, weather forecast, WeatherNow"
-        />
-        <meta name="author" content="WeatherNow Team" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Open Graph Meta Tags for better sharing */}
-        <meta property="og:title" content="WeatherNow - Real-Time Weather Updates" />
-        <meta property="og:description" content="Get accurate, real-time weather updates, forecasts, and alerts." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://exploreweather.vercel.app/" />
-        <meta property="og:image" content="/weather-og-image.png" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <header role="banner">
         <nav
           className="navbar navbar-expand-lg navbar-dark bg-dark px-4"

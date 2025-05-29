@@ -1,28 +1,9 @@
-import Head from 'next/head';
+
 import Link from 'next/link';
 
 export default function FAQs() {
   return (
     <>
-      <Head>
-        <title>Frequently Asked Questions | WeatherNow - Your Trusted Weather Source</title>
-        <meta
-          name="description"
-          content="Comprehensive FAQ for WeatherNow covering weather data accuracy, premium features, API access, privacy policies, and troubleshooting guides."
-        />
-        <meta
-          name="keywords"
-          content="WeatherNow FAQ, weather app questions, forecast accuracy, weather alerts, premium features, data privacy, API access, troubleshooting"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="WeatherNow Team" />
-        <meta property="og:title" content="WeatherNow FAQs - Your Questions Answered" />
-        <meta property="og:description" content="Get answers about weather forecasts, premium subscriptions, data sources, and technical support." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://exploreweather.vercel.app/faqs" />
-        <meta property="og:image" content="https://exploreweather.vercel.app/images/og-faqs.jpg" />
-        <link rel="canonical" href="https://exploreweather.vercel.app/faqs" />
-      </Head>
 
       <main className="min-vh-100 bg-light py-5">
         <div className="container">

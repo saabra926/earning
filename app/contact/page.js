@@ -1,5 +1,4 @@
 "use client"
-import Head from 'next/head';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -32,12 +31,6 @@ export default function Contact() {
 
   return (
     <>
-      <Head>
-        <title>Contact Us | Your Website Name</title>
-        <meta name="description" content="Reach out to our team with any inquiries, feedback, or support requests. We're here to help!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
-      </Head>
 
       <div className="container py-5">
         <div className="row justify-content-center">

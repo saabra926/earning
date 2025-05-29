@@ -1,7 +1,8 @@
 // pages/top-stories.js
-import Head from 'next/head';
 
 export default function TopStories() {
+
+
   const stories = [
     {
       title: "🔥 Heatwave Crisis in India Reaches Alarming Levels",
@@ -188,19 +189,6 @@ London and the Thames Valley have had flood barriers raised several times this m
 
   return (
     <>
-      <Head>
-        <title>Top Weather Stories | Weather Now</title>
-        <meta
-          name="description"
-          content="Explore detailed global weather news, top climate stories, and extreme weather forecasts from around the world. Stay informed with real-time environmental updates."
-        />
-        <meta
-          name="keywords"
-          content="weather news, global weather, heatwaves, storms, floods, tornadoes, wildfires, climate change"
-        />
-        <meta name="author" content="Weather App" />
-      </Head>
-
       <header className="bg-primary text-white text-center py-4">
         <h1>Top Weather Stories</h1>
         <p className="lead">Global climate and extreme weather updates</p>
