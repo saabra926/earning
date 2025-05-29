@@ -26,7 +26,7 @@ export const metadata = {
   openGraph: {
     title: "WeatherNow: Instant Weather Updates",
     description: "Accurate real-time weather forecasts for any city. Check temperature, humidity, wind speed, and expert weather tips.",
-    url: "https://exploreweather.site/",
+    url: "https://www.exploreweather.site/",
     siteName: "WeatherNow",
     images: [
       {
