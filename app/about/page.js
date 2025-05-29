@@ -26,28 +26,7 @@ export default function About() {
 
   return (
     <>
-      <Head>
-        <title>About WeatherNow | Our Story, Technology & Weather Experts</title>
-        <meta
-          name="description"
-          content="Discover how WeatherNow combines meteorology expertise with cutting-edge technology to deliver hyper-local weather forecasts you can trust. Meet our team of weather specialists."
-        />
-        <meta
-          name="keywords"
-          content="weather forecasting technology, meteorology team, weather data accuracy, storm prediction, climate monitoring, weather API"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="About WeatherNow | Trusted Weather Forecasting" />
-        <meta property="og:description" content="Learn how our team of meteorologists and engineers build reliable weather prediction tools." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://exploreweather.site/about" />
-        <meta property="og:image" content="https://exploreweather.site/weather-tech.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-      </Head>
+  
 
 
       <main className="bg-light">
