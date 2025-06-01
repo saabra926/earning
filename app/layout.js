@@ -60,11 +60,11 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
 
-             <meta name="google-site-verification" content="OU68Q3H8nSu8nYkDqkvPKPBNH8WmzHiPmqUFyjX12oE" />
+        <meta name="google-site-verification" content="OU68Q3H8nSu8nYkDqkvPKPBNH8WmzHiPmqUFyjX12oE" />
 
         {/* Google AdSense (preserved exactly as you had it) */}
-        <script 
-          async 
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9296013700822279"
           crossOrigin="anonymous"
         />
@@ -95,6 +95,10 @@ export default function RootLayout({ children }) {
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossOrigin="anonymous"
         />
+
+
+        <link rel="canonical" href={canonicalUrl} />
+
       </head>
       <body>
         <Header />
