@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
         />
 
 
-        <link rel="canonical" href={canonicalUrl} />
+        <link rel="canonical" href="https://www.exploreweather.site/" />
 
       </head>
       <body>
