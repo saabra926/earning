@@ -1,63 +1,164 @@
+/* Color Variables */
+:root {
+  --chocolate-dark: #3a2417;
+  --chocolate-medium: #5c3a21;
+  --chocolate-light: #7d5d46;
+  --cream-dark: #f5e6d0;
+  --cream-medium: #f8f1e5;
+  --cream-light: #fdfaf5;
+  --accent-gold: #d4af37;
+}
+
+/* Base Styles */
+.navbar-cream {
+  background-color: var(--chocolate-dark);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-cream .navbar-brand {
+  color: var(--cream-light);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.navbar-cream .navbar-brand .logo-text {
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.navbar-cream .navbar-brand .logo-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-gold);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar-cream .navbar-brand:hover .logo-text::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 /* Mobile Toggle Icon */
 .navbar-toggler {
-    border: none;
-    background-color: #fff; /* Set a background color for the toggle icon */
+  border: none;
+  background-color: transparent !important;
+  padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 1.5em;
+  height: 1.5em;
 }
 
 /* Navbar Links */
 .navbar-nav .nav-link {
-    font-size: 1rem;
-    font-weight: 500;
-    transition: 0.3s;
+  color: var(--cream-medium);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-gold);
+  transition: width 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    text-decoration: underline;
+  color: var(--cream-light);
 }
 
-/* Cart Button */
-.btn-warning {
-    font-weight: bold;
+.navbar-nav .nav-link:hover::before {
+  width: 70%;
 }
 
-/* Ensure dropdown is full width on mobile */
+.navbar-nav .nav-link[aria-current="page"] {
+  color: var(--cream-light);
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link[aria-current="page"]::before {
+  width: 70%;
+  background-color: var(--cream-light);
+}
+
+/* Mobile Menu Styles */
 @media (max-width: 991px) {
-    .navbar-collapse {
-        background-color: #3b5d50;
-        padding: 1rem;
-        transition: max-height 0.3s ease-in-out; /* Smooth transition for the menu */
-    }
+  .navbar-collapse {
+    background-color: var(--chocolate-medium);
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+  }
 
-    .navbar-nav {
-        width: 100%;
-    }
+  .navbar-nav {
+    width: 100%;
+  }
 
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
-    }
+  .navbar-nav .nav-item {
+    margin-bottom: 0.5rem;
+  }
 
-    /* Optional: Add smooth transitions */
-    .navbar-collapse.collapse {
-        max-height: 0;
-        overflow: hidden;
-    }
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin: 0.25rem 0;
+  }
 
-    .navbar-collapse.show {
-        max-height: 500px; /* Set a max height that’s sufficient for the menu items */
-    }
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-nav .nav-link::before {
+    display: none;
+  }
+
+  .navbar-collapse.collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .navbar-collapse.show {
+    max-height: 500px;
+  }
 }
 
-/* Optional: Mobile Menu Color and Spacing */
-@media (max-width: 576px) {
-    .navbar-collapse {
-        background-color: #2a3e38; /* A darker shade for mobile */
-    }
+/* Desktop Enhancements */
+@media (min-width: 992px) {
+  .navbar-cream {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-    .navbar-nav .nav-link {
-        font-size: 1.1rem; /* Slightly larger text on mobile */
-    }
+  .navbar-nav .nav-item {
+    position: relative;
+  }
 
-    .navbar-toggler {
-        color: #fff; /* Set the toggler icon color */
-    }
+  .navbar-nav .nav-link {
+    margin: 0 0.5rem;
+  }
 }

@@ -30,14 +30,14 @@ export default function Header() {
     <>
       <header role="banner">
         <nav
-          className="navbar navbar-expand-lg navbar-dark bg-dark px-4"
+          className="navbar navbar-expand-lg navbar-cream px-4"
           role="navigation"
           aria-label="Main navigation"
         >
           <div className="container-fluid">
             <Link href="/" passHref legacyBehavior>
               <a className="navbar-brand fw-bold" aria-label="WeatherNow Home">
-                WeatherNow
+                <span className="logo-text">WeatherNow</span>
               </a>
             </Link>
 

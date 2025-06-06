@@ -1,62 +1,124 @@
 "use client";
 import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+  faInstagram,
+  faGithub,
+  faWhatsapp,
+  faFacebookF
+} from '@fortawesome/free-brands-svg-icons';
+import { 
+  faMapMarkerAlt,
+  faEnvelope,
+  faPhone
+} from '@fortawesome/free-solid-svg-icons';
+import "./footer.css";
 
 export function Footer() {
   return (
-    <>
-      <footer className="bg-dark text-center text-white pt-5 pb-4" role="contentinfo">
-        <div className="container text-md-start">
-          <div className="row text-center text-md-start">
+    <footer className="footer-chocolate" role="contentinfo">
+      <div className="container">
+        <div className="footer-content">
 
-            {/* About Us */}
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
-              <h6 className="text-uppercase mb-4 font-weight-bold">About Us</h6>
-              <p>WeatherNow provides accurate, real-time weather forecasts, news, and alerts to keep you safe and informed worldwide.</p>
+          {/* About Us */}
+          <div className="footer-section">
+            <h6 className="footer-heading">About WeatherNow</h6>
+            <div className="footer-logo">WeatherNow</div>
+            <p className="footer-text">
+              Providing accurate, real-time weather forecasts, news, and alerts to keep you safe and informed worldwide.
+            </p>
+            <div className="social-links">
+              <Link
+                href="https://www.instagram.com/_vibe_with_dawood?igsh=MW5lenhobzZxcHM4Zg=="
+                passHref
+                legacyBehavior
+              >
+                <a target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+              </Link>
+              <Link 
+                href="https://github.com/Dawood0426" 
+                passHref
+                legacyBehavior
+              >
+                <a target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </Link>
+              <Link 
+                href="https://wa.me/03144885177" 
+                passHref
+                legacyBehavior
+              >
+                <a target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                </a>
+              </Link>
+              <Link 
+                href="https://www.facebook.com/itx.rajpootdawood" 
+                passHref
+                legacyBehavior
+              >
+                <a target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </a>
+              </Link>
             </div>
-
-            {/* Quick Links */}
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 className="text-uppercase mb-4 font-weight-bold">Quick Links</h6>
-              <p><Link href="https://www.instagram.com/_vibe_with_dawood?igsh=MW5lenhobzZxcHM4Zg==" target="_blank" className="text-white">Instagram</Link></p>
-              <p><Link href="https://github.com/Dawood0426" target="_blank" className="text-white">Github</Link></p>
-              <p><Link href="https://wa.me/03144885177" target="_blank" className="text-white">WhatsApp</Link></p>
-              <p><Link href="https://www.facebook.com/itx.rajpootdawood" className="text-white">Facebook</Link></p>
-            </div>
-
-            {/* Services */}
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 className="text-uppercase mb-4 font-weight-bold">Services</h6>
-              <p><Link href="/about" className="text-white">About</Link></p>
-              <p><Link href="/blogs" className="text-white">Blogs</Link></p>
-              <p><Link href="/faq" className="text-white">FAQs</Link></p>
-              <p><Link href="/contact" className="text-white">Contact</Link></p>
-            </div>
-
-            {/* Contact */}
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p><i className="fas fa-home mr-3"></i> Faisalabad, GM Abad, PK</p>
-              <p><i className="fas fa-envelope mr-3"></i> rdawood379@gmail.com</p>
-              <p><i className="fas fa-phone mr-3"></i> +92 314 4885177</p>
-              <p><i className="fas fa-print mr-3"></i> +92 314 4885177</p>
-            </div>
-
           </div>
 
-          {/* Footer Bottom */}
-          <div className="row d-flex justify-content-center mt-4">
-            <div className="col-md-7 col-lg-8">
-              <p className="text-center small">
-                © 2025 <strong>WeatherNow</strong>. All rights reserved. Designed and developed by <a href="https://wa.me/03144885177" target="_blank" className="text-white fw-bold">Dawood Rehman</a>.
-              </p>
-              <div className="d-flex justify-content-center">
-                <Link href="/privacy" className="text-white me-3 small">Privacy Policy</Link>
-                <Link href="/terms" className="text-white small">Terms of Service</Link>
-              </div>
-            </div>
+          {/* Quick Links */}
+          <div className="footer-section">
+            <h6 className="footer-heading">Quick Links</h6>
+            <ul className="footer-links">
+              <li><Link href="/" className="footer-link">Home</Link></li>
+              <li><Link href="/about" className="footer-link">About Us</Link></li>
+              <li><Link href="/blogs" className="footer-link">Blogs</Link></li>
+              <li><Link href="/topstories" className="footer-link">Top Stories</Link></li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div className="footer-section">
+            <h6 className="footer-heading">Services</h6>
+            <ul className="footer-links">
+              <li><Link href="/faq" className="footer-link">FAQs</Link></li>
+              <li><Link href="/contact" className="footer-link">Contact</Link></li>
+              <li><Link href="/privacy" className="footer-link">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="footer-link">Terms of Service</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="footer-section">
+            <h6 className="footer-heading">Contact Us</h6>
+            <ul className="footer-contact">
+              <li className="contact-item">
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon" />
+                <span>Faisalabad, GM Abad, PK</span>
+              </li>
+              <li className="contact-item">
+                <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+                <span>rdawood379@gmail.com</span>
+              </li>
+              <li className="contact-item">
+                <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+                <span>+92 314 4885177</span>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </>
+
+        {/* Footer Bottom */}
+        <div className="footer-bottom">
+          <div className="copyright">
+            © 2025 <strong>WeatherNow</strong>. All rights reserved.
+          </div>
+          <div className="credits">
+            Designed and developed by <Link href="https://wa.me/03144885177" target="_blank" className="creator-link">Dawood Rehman</Link>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 }
