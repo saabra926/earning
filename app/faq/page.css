@@ -1,0 +1,56 @@
+
+        :root {
+          --chocolate: #5D4037;
+          --light-chocolate: #8D6E63;
+          --cream: #F5F5F0;
+          --light-cream: #FFFDF5;
+        }
+        .bg-chocolate {
+          background-color: var(--chocolate) !important;
+        }
+        .bg-light-chocolate {
+          background-color: var(--light-chocolate) !important;
+        }
+        .bg-cream {
+          background-color: var(--cream) !important;
+        }
+        .bg-light-cream {
+          background-color: var(--light-cream) !important;
+        }
+        .text-chocolate {
+          color: var(--chocolate) !important;
+        }
+        .border-chocolate {
+          border-color: var(--light-chocolate) !important;
+        }
+        .btn-chocolate {
+          background-color: var(--chocolate);
+          color: white;
+          border: none;
+        }
+        .btn-chocolate:hover {
+          background-color: var(--light-chocolate);
+          color: white;
+        }
+        .accordion-button:not(.collapsed) {
+          color: white;
+          background-color: var(--light-chocolate);
+        }
+        .accordion-button:focus {
+          box-shadow: 0 0 0 0.25rem rgba(93, 64, 55, 0.25);
+          border-color: var(--light-chocolate);
+        }
+        .list-group-item {
+          transition: all 0.2s ease;
+        }
+        .list-group-item:hover {
+          transform: translateX(5px);
+        }
+        @media (max-width: 768px) {
+          .display-4 {
+            font-size: 2.5rem;
+          }
+          .card-body {
+            padding: 1.5rem !important;
+          }
+        }

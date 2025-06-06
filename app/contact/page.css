@@ -1,0 +1,59 @@
+
+        :root {
+          --chocolate: #5D4037;
+          --light-chocolate: #8D6E63;
+          --cream: #F5F5F0;
+          --light-cream: #FFFDF5;
+        }
+        .bg-chocolate {
+          background-color: var(--chocolate) !important;
+        }
+        .bg-light-chocolate {
+          background-color: var(--light-chocolate) !important;
+        }
+        .bg-cream {
+          background-color: var(--cream) !important;
+        }
+        .bg-light-cream {
+          background-color: var(--light-cream) !important;
+        }
+        .text-chocolate {
+          color: var(--chocolate) !important;
+        }
+        .border-chocolate {
+          border-color: var(--light-chocolate) !important;
+        }
+        .btn-chocolate {
+          background-color: #5D4037;
+          color: white;
+          border: none;
+          transition: all 0.3s ease;
+        }
+        .btn-chocolate:hover {
+          background-color: var(--light-chocolate);
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(93, 64, 55, 0.2);
+        }
+        .btn-chocolate:disabled {
+          background-color: var(--light-chocolate);
+          opacity: 0.8;
+        }
+        .form-control:focus {
+          border-color: var(--light-chocolate);
+          box-shadow: 0 0 0 0.25rem rgba(93, 64, 55, 0.25);
+        }
+        .alert {
+          border-radius: 0.5rem;
+        }
+        @media (max-width: 768px) {
+          .display-5 {
+            font-size: 2.2rem;
+          }
+          .card-body {
+            padding: 1.5rem !important;
+          }
+          .d-flex {
+            flex-direction: column;
+            gap: 1rem !important;
+          }
+        }

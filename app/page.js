@@ -58,11 +58,11 @@ export default function Home() {
 
   const updateBackground = (weatherCode) => {
     const backgrounds = {
-      sunny: "/sunny-bg.jpg",
-      rainy: "/rainy-bg.jpg",
-      cloudy: "/cloudy-bg.jpg",
-      snowy: "/snowy-bg.jpg",
-      default: "/default-bg.jpg"
+      sunny: "/sunny.jpg",
+      rainy: "/rainy.jpg",
+      cloudy: "/cloudy.jpg",
+      snowy: "/snowy.jpg",
+      default: "/default.jpg"
     };
 
     let bg = backgrounds.default;
