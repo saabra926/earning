@@ -1,0 +1,87 @@
+
+        :root {
+          --chocolate: #5D4037;
+          --dark-chocolate: #3E2723;
+          --cream: #FFF8E1;
+          --light-cream: #FFFDF5;
+          --dark-brown: #4E342E;
+        }
+        
+        .bg-chocolate {
+          background-color: var(--chocolate) !important;
+        }
+        
+        .bg-dark-chocolate {
+          background-color: var(--dark-chocolate) !important;
+        }
+        
+        .bg-cream {
+          background-color: var(--cream) !important;
+        }
+        
+        .bg-light-cream {
+          background-color: var(--light-cream) !important;
+        }
+        
+        .text-chocolate {
+          color: var(--chocolate) !important;
+        }
+        
+        .text-dark-chocolate {
+          color: var(--dark-chocolate) !important;
+        }
+        
+        .text-cream {
+          color: var(--cream) !important;
+        }
+        
+        .text-dark-brown {
+          color: var(--dark-brown) !important;
+        }
+        
+        .btn-chocolate {
+          background-color: var(--chocolate);
+          color: var(--cream);
+          border-color: var(--chocolate);
+        }
+        
+        .btn-chocolate:hover {
+          background-color: var(--dark-chocolate);
+          border-color: var(--dark-chocolate);
+          color: var(--cream);
+        }
+        
+        .btn-chocolate-outline {
+          background-color: transparent;
+          color: var(--chocolate);
+          border-color: var(--chocolate);
+        }
+        
+        .btn-chocolate-outline:hover {
+          background-color: var(--chocolate);
+          color: var(--cream);
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+          color: var(--cream);
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:hover {
+          color: white;
+          text-decoration: underline;
+        }
+        
+        body {
+          background-color: var(--light-cream);
+          color: var(--dark-brown);
+        }
+        
+        .card {
+          border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+          .display-4 {
+            font-size: 2.5rem;
+          }
+        }

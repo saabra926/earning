@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import Head from 'next/head';
 import "./page.css"
 
 export default function Contact() {
@@ -40,6 +41,9 @@ export default function Contact() {
   return (
     <>
 
+  <Head>
+        <link rel="canonical" href="https://www.exploreweather.site/contact" />
+      </Head>
 
       <div className="bg-cream py-5 min-vh-100">
         <div className="container">
@@ -127,10 +131,10 @@ export default function Contact() {
               <div className="text-center mt-5">
                 <h3 className="h5 text-chocolate mb-3">Other Ways to Reach Us</h3>
                 <div className="d-flex justify-content-center gap-4">
-                  <a href="mailto:support@weathernow.com" className="text-decoration-none text-chocolate">
+                  <a href="mailto:rdawood379@gmail.com" className="text-decoration-none text-chocolate">
                     <i className="bi bi-envelope-fill me-2"></i>Email
                   </a>
-                  <a href="tel:+18005551234" className="text-decoration-none text-chocolate">
+                  <a href="tel:+923144885177" className="text-decoration-none text-chocolate">
                     <i className="bi bi-telephone-fill me-2"></i>Phone
                   </a>
                   <a href="https://twitter.com/WeatherNowSupport" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-chocolate">

@@ -2,6 +2,8 @@
 import "./page.css"
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
+
 
 export default function About() {
   // Enhanced structured data for SEO
@@ -34,13 +36,17 @@ export default function About() {
   return (
     <>
       
+      
+      <Head>
+        <link rel="canonical" href="https://www.exploreweather.site/about" />
+      </Head>
 
       <main className="bg-cream">
         <div className="container py-5">
           {/* Hero Section */}
-          <section className="text-center py-5 mb-4 bg-white rounded-3 shadow-sm">
+          <section className="text-center py-5 mb-4 main-ha rounded-3 shadow-sm">
             <h1 className="display-5 fw-bold mb-3 text-chocolate">Why WeatherNow Stands Out</h1>
-            <p className="lead mx-auto text-dark" style={{ maxWidth: "700px" }}>
+            <p className="lead mx-auto ye-b" style={{ maxWidth: "700px" }}>
               We're not just another weather app - we're a team of <strong className="text-chocolate">passionate meteorologists</strong> and <strong className="text-chocolate">data scientists</strong>
               dedicated to making weather forecasting accessible, accurate, and actionable.
             </p>

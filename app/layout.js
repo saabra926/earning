@@ -8,7 +8,7 @@ export const metadata = {
   description: "Accurate real-time weather forecasts for any city. Check temperature, humidity, wind speed, and expert weather tips. Updated every hour.",
   keywords: "live weather, weather forecast today, humidity levels, wind speed, local climate, weather alerts",
   authors: [{ name: "WeatherNow Team" }],
-  metadataBase: new URL("https://exploreweather.site"),
+  metadataBase: new URL("https://www.exploreweather.site/"),
   alternates: {
     canonical: "/",
   },
@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
 
         <meta name="google-site-verification" content="OU68Q3H8nSu8nYkDqkvPKPBNH8WmzHiPmqUFyjX12oE" />
 
-        {/* Google AdSense (preserved exactly as you had it) */}
+        {/* Google AdSense */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9296013700822279"
@@ -76,8 +76,13 @@ export default function RootLayout({ children }) {
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
           crossOrigin="anonymous"
         />
+      </head>
+      <body>
+        <Header />
+        {children}
+        <Footer />
 
-        {/* Google Analytics (preserved exactly as you had it) */}
+        {/* Google Analytics */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZRTMQ187Y" />
         <Script id="google-analytics">
           {`
@@ -95,15 +100,6 @@ export default function RootLayout({ children }) {
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossOrigin="anonymous"
         />
-
-
-        <link rel="canonical" href="https://www.exploreweather.site/" />
-
-      </head>
-      <body>
-        <Header />
-        {children}
-        <Footer />
       </body>
     </html>
   );

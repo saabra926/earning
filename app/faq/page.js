@@ -1,10 +1,14 @@
-
+import Head from 'next/head';
 import Link from 'next/link';
 import "./page.css"
 
 export default function FAQs() {
   return (
     <>
+
+      <Head>
+        <link rel="canonical" href="https://www.exploreweather.site/about" />
+      </Head>
 
       <main className="min-vh-100 bg-cream py-5">
         <div className="container">
@@ -210,7 +214,7 @@ export default function FAQs() {
                           <p>Submit reports via:</p>
                           <ul className="list-group list-group-flush mb-3">
                             <li className="list-group-item bg-light-cream">In-app feedback form (Settings → Help)</li>
-                            <li className="list-group-item bg-light-cream">Email: <a href="mailto:support@weathernow.com" className="text-chocolate">support@weathernow.com</a></li>
+                            <li className="list-group-item bg-light-cream">Email: <a href="rdawood379@gmail.com" className="text-chocolate">support@weathernow.com</a></li>
                             <li className="list-group-item bg-light-cream">Twitter: <a href="https://twitter.com/WeatherNowSupport" target="_blank" rel="noopener noreferrer" className="text-chocolate">@WeatherNowSupport</a></li>
                           </ul>
                           <p>Average response time: 2 business days.</p>
@@ -320,17 +324,17 @@ export default function FAQs() {
                                 <tr>
                                   <td>Enterprise</td>
                                   <td>API access, white-label solutions, SLA guarantees</td>
-                                  <td><a href="mailto:sales@weathernow.com" className="text-chocolate">sales@weathernow.com</a></td>
+                                  <td><a href="mailto:sales@weathernow.com" className="text-chocolate">rd535328@gmail.com</a></td>
                                 </tr>
                                 <tr>
                                   <td>Education</td>
                                   <td>Classroom tools, historical datasets, discounted rates</td>
-                                  <td><a href="mailto:edu@weathernow.com" className="text-chocolate">edu@weathernow.com</a></td>
+                                  <td><a href="mailto:edu@weathernow.com" className="text-chocolate">rdawood379@gmail.com</a></td>
                                 </tr>
                                 <tr>
                                   <td>Nonprofit</td>
                                   <td>Free basic access for qualified organizations</td>
-                                  <td><a href="mailto:impact@weathernow.com" className="text-chocolate">impact@weathernow.com</a></td>
+                                  <td><a href="mailto:impact@weathernow.com" className="text-chocolate">rasaab926@gmail.com</a></td>
                                 </tr>
                               </tbody>
                             </table>

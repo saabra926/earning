@@ -10,7 +10,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [unit, setUnit] = useState("celsius");
-  const [background, setBackground] = useState("/default-bg.jpg");
+  const [background, setBackground] = useState("/default.jpg");
   const [savedLocations, setSavedLocations] = useState([]);
   const [showHourly, setShowHourly] = useState(false);
   const [activeTab, setActiveTab] = useState("current");
@@ -652,8 +652,8 @@ export default function Home() {
                   </li>
                 </ul>
                 <div className="mt-3 text-center">
-                  <Link href="/blog" className="viewAllBtn">
-                    View All Articles
+                  <Link href="/blogs" className="viewAllBtn">
+                    View All Blogs
                   </Link>
                 </div>
               </div>

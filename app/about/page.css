@@ -24,7 +24,7 @@
         }
         
         .text-chocolate {
-          color: var(--chocolate);
+          color: #ffff;
         }
         
         .text-cream {
@@ -72,4 +72,11 @@
           height: auto;
         }
         
+
+        .main-ha{
+          background-color: #5d4037 !important;
+        }
         
+        .ye-b{
+          color: #ffff;
+        }
