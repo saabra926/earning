@@ -144,6 +144,48 @@ export default function Blogs() {
       readTime: "9 min read",
       category: "climate"
     },
+    
+      // 11th blog
+    {
+      id: 11,
+      title: "How to Read a Weather Radar Like a Meteorologist",
+      excerpt: "Read weather like an expert with all features.",
+      content: "Now you will also be able to read weather like an expert  ...",
+      image: "/expert.jpg",
+      alt: 'Read like an expert',
+      date: "1 hours ago",
+      tags: ["outdoors", "weather", "conditions" ],
+      readTime: "9 min read",
+      category: "climate"
+    },
+
+      // 12th blog
+    {
+      id: 12,
+      title: "Tornado Warning Signs & How to Protect Your Family",
+      excerpt: "Protect your family in serious situations.",
+      content: "Learn how to behave in hallarious situations  ...",
+      image: "/protect.jpg",
+      alt: 'Emergency situation',
+      date: "11 min ago",
+      tags: ["outdoors", "weather", "conditions" , "safety"],
+      readTime: "8 min read",
+      category: "Survival"
+    },
+
+      // 13th blog
+    {
+      id: 13,
+      title: "Monsoon Season Explained: What to Expect & How to Prepare",
+      excerpt: "How the moonsoon season enter in the country ",
+      content: "Style of moonsoon in different countries  ...",
+      image: "/moonsoon.jpg",
+      alt: 'Moonsoon season',
+      date: "41 min ago",
+      tags: ["outdoors", "weather", "conditions" , "climate"],
+      readTime: "7 min read",
+      category: "Climate"
+    },
 
   ];
 
